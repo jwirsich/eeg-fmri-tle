@@ -1,0 +1,9 @@
+participant_id	group	sex	age	epilepsy_onset	epilepsy_duration	etiology
+sub-marsp05	rTLE	M	36	6	30	MRneg
+sub-marsp06	rTLE	F	27	11	17	hypersignalamygd
+sub-marsp08	rTLE	F	50	23	37	MRneg
+sub-marsp18	rTLE	M	31	29	2	hypertrophyAmygd
+sub-marsp21	rTLE	M	35	12	32	HS
+sub-marsp24	rTLE	F	21	9	12	HS
+sub-marsp65	rTLE	F	38	12	26	atrophy
+sub-marsp92	rTLE	F	49	20	29	cavernoma

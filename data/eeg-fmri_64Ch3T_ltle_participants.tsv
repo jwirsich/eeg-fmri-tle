@@ -1,0 +1,4 @@
+participant_id	group	sex	age	epilepsy_onset	epilepsy_duration	etiology
+sub-marsp16	lTLE	M	22	19	3	MRneg
+sub-marsp66	lTLE	F	44	28	16	HS
+sub-marsp76	lTLE	M	54	54	1	MRneg

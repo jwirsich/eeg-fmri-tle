@@ -1,0 +1,14 @@
+participant_id	group	sex	age	epilepsy_onset	epilepsy_duration	etiology
+sub-epi001	lTLE	M	18	8	10	asym
+sub-epi002	lTLE	F	40	15	25	HS
+sub-epi003	lTLE	M	32	23	9	incomprotHyp
+sub-epi004	lTLE	F	61	16	54	HS
+sub-epi005	lTLE	M	44	17	27	HS
+sub-epi006	lTLE	M	27	23	4	MRneg
+sub-epi007	lTLE	F	26	13	13	HS
+sub-epi008	lTLE	F	43	12	31	HS
+sub-epi009	lTLE	M	26	18	8	HS
+sub-epi010	lTLE	F	36	28	8	tumor
+sub-epi011	lTLE	F	42	17	25	HS
+sub-epi012	lTLE	M	30	22	8	MRneg
+sub-epi013	lTLE	F	29	16	13	MRneg

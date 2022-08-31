@@ -1,0 +1,11 @@
+participant_id	group	sex	age	epilepsy_onset	epilepsy_duration	etiology
+sub-epi014	rTLE	M	24	15	9	vascular
+sub-epi015	rTLE	F	32	9	23	HS
+sub-epi016	rTLE	M	37	20	17	HS
+sub-epi017	rTLE	F	29	27	3	HS
+sub-epi018	rTLE	F	52	12	40	HS
+sub-epi019	rTLE	F	30	25	5	CD
+sub-epi020	rTLE	F	22	17	5	HS
+sub-epi021	rTLE	F	60	25	35	HS
+sub-epi022	rTLE	M	27	23	4	MRneg
+sub-epi023	rTLE	M	36	5	32	HS
