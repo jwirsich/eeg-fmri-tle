@@ -1,5 +1,5 @@
 % Bootstrap Group Means of EEG-fMRI correlation
-% Suplementary Table 6
+% Supplementary Table 6
 %
 % 2022-08-22 Jonathan Wirsich
 [confs, confs_label, groups, eeg_conn_types, bands, atlases, serialized_path] = init_serialized_conf_tle();
@@ -241,7 +241,7 @@ for atl=1:1
         stat_bootsrapped_model.labels = model_labels;
     
         %serialize
-    %     out_path = ['/media/jwirsich/DATA/projects/eeg-fmri-geneva-bids/serialized/test_stat_bootsrapped_model_' mdl_name]; 
+    %     out_path = ['serialized/test_stat_bootsrapped_model_' mdl_name]; 
     %     save(out_path,'stat_bootsrapped_model');
     end
 
