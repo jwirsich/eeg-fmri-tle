@@ -23,17 +23,15 @@ function counts_p = permute_subjectgroups(iter, b, targetMetric_group, targetMet
         %ltle beta vs. controls
         perm_idx = randperm(group_size(1)+group_size(2));
         %TODO oversamples groups were only changes within group occur (should happen
-        %only once?): offset by requiring result to be strcitly greater than
+        %only once?): offset by requiring result to be strictly greater than
         %baseline
         perm_labels = group_idx(perm_idx);
 
         %group_idx 1,2 = controls,lTLE
         %TODO this does not take into account rtle vs. ltle idx==2 vs. idx==3
-        count_controls = 0;
         
         for i = 1:group_size(1)+group_size(2)
-            if perm_labels(i) == 1 && count_controls < group_size(2)
-                count_controls = count_controls+1;
+            if perm_labels(i) == 1
                 group_fMRI{1} = group_fMRI{1} + allsub_fMRI_select(i,:)/group_size(1);
                 group_EEG{1} = group_EEG{1} + squeeze(allsub_EEG_select(i,:,:)/group_size(1));
             elseif perm_labels(i) > 1
@@ -87,8 +85,8 @@ function counts_p = permute_subjectgroups(iter, b, targetMetric_group, targetMet
                 elseif strcmp(targetMetric, 'spat')
                     diff_patcontro = targetMetric_group(2,b,mask_it) - ...
                         targetMetric_group(1,b,mask_it);
-                    if (mean(perm_metric_eegfmri2(model.Connectome(sameRSN==yeo_iter).vec)) - ...
-                        mean(perm_metric_eegfmri1(model.Connectome(sameRSN==yeo_iter).vec)) > ...
+                    if (mean(perm_metric_eegfmri2(masks(mask_it,:))) - ...
+                        mean(perm_metric_eegfmri1(masks(mask_it,:))) > ...
                         mean(diff_patcontro))
                         counts_p(mask_it) = counts_p(mask_it) +1;
                     end
